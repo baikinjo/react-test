@@ -8,6 +8,6 @@ export default () => {
     <div>
       <CommentBox />
       <CommentList />
-    </div>    
+    </div>
   )
 }
