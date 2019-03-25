@@ -7,14 +7,10 @@ import reducers from 'reducers'
 
 export default ({ children, initialState = {} }) => {
   const store = createStore(
-    reducers, 
-    initialState, 
+    reducers,
+    initialState,
     applyMiddleware(reduxPromise)
   )
 
-  return (
-    <Provider store={store}>
-      {children}
-    </Provider>
-  )
+  return <Provider store={store}>{children}</Provider>
 }
